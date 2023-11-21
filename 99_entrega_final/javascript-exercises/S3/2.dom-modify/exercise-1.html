@@ -1,6 +1,5 @@
-Dado el siguiente html usa querySelector para mostrar por consola el p con el id #pillado
+<!--Inserta dinamicamente en un html un div vacio con javascript.-->
 
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,14 @@ Dado el siguiente html usa querySelector para mostrar por consola el p con el id
     <title>Document</title>
 </head>
 <body>
-    <p id="pillado">Aqui estoy 8)</p>
+    
+ <script>
+
+   let createDiv = document.createElement("div");
+   document.body.appendChild(createDiv);
+
+ </script>
+
 </body>
 </html>
-```
+

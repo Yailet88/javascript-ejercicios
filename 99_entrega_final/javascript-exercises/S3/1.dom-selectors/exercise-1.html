@@ -13,14 +13,8 @@
 <body>
     <button class="showme">Pillame!</button>
     <script>
-        for (let articulo of articulos) {
-            articulo.addEventListener('mouseover', () => {
-                articulo.childNodes[3].className = "par-animado";
-            })
-            articulo.addEventListener('mouseout', () => {
-                articulo.childNodes[3].className = "par";
-            })
-        }
+        let button1 = document.querySelector('.showme');
+        console.log(button1);  
     </script>
 </body>
 

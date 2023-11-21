@@ -4,5 +4,3 @@ let carName = 'Volvo';
 console.log(carName);
 
 
-myFavouriteHero = "Hulk";
-console.log(myFavouriteHero);
