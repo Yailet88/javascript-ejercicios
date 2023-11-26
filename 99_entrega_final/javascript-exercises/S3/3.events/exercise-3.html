@@ -9,17 +9,12 @@
 </head>
 <body>
   <input type="text"/>
-  <input class="value" type="text" />
-
   <script>
+    const textBox = document.querySelector('input');
 
-    let valueInput = document.body.querySelector(".value");
-    valueInput.addEventListener("input", function (event) {
-
-    console.log(event.target.value);
-  });
-
+    textBox.addEventListener('input', function() {
+    console.log(`el valor del input es: ${textBox.value}`)
+    });
   </script>
-
 </body>
 </html>
