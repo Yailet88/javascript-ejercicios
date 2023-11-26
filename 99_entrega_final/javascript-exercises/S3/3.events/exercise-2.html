@@ -4,20 +4,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio2</title>
 </head>
 <body>
-
   <input type="text"/>
-  <input class="focus" type="text" />
-
   <script>
-    let focusInput = document.body.querySelector(".focus");
-    focusInput.addEventListener("focus", function (event) {
-    console.log(event.target.value);
-   });
+    // Seleccionar la caja de texto
+    const input = document.querySelector('input');
+    
+    // añadir el eventListener que muestre en consola lo que se escriba en la caja de texto
+    input.addEventListener('focus', function() {
+      console.log(`El valor del input es: ${input.value}`);
+    });
   </script>
 
 </body>

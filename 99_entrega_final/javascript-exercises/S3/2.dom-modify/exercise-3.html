@@ -1,0 +1,33 @@
+<!--Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <script>
+
+    // Crear un nuevo Div
+    const nuevoDiv = document.createElement('div');
+    nuevoDiv.innerHTML = `<h1>Este es el div contenedor</h1>`
+
+   // Loop para crear y añadir parrafos
+
+   for (i = 0; i <= 5; i++) {
+    const para =  document.createElement('p');
+    nuevoDiv.appendChild(p1);
+    para.textContent = `Parrafo ${i}`;
+  }
+
+  // insertar div en el body
+
+   document.body.appendChild(nuevoDiv);
+
+   </script>
+
+</body>
+</html>
+
